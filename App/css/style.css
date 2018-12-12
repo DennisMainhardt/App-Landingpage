@@ -1,0 +1,234 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.brands ul {
+  margin: 0;
+  padding: 2rem 0;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    .brands ul {
+      grid-template-columns: repeat(3, auto); } }
+
+.brands li {
+  list-style: none; }
+  .brands li img {
+    width: 100%;
+    max-width: 13rem; }
+
+.download__section {
+  background-image: url(../img/downloadBackground.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 10rem 0;
+  margin-top: -7rem; }
+  .download__section h2 {
+    font-size: 6.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0; }
+  .download__section p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 60rem; }
+  .download__section .button__download {
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    padding: 2rem 8rem;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.42);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1.5rem;
+    transition: all 0.2s ease; }
+    .download__section .button__download:hover, .download__section .button__download:active, .download__section .button__download:focus {
+      transform: scale(1.2); }
+  .download__section .apple:before {
+    position: absolute;
+    display: block;
+    left: 17%;
+    top: 1.6rem;
+    content: url("../img/appleicon.png"); }
+  .download__section .google:before {
+    position: absolute;
+    display: block;
+    left: 17%;
+    top: 1.6rem;
+    content: url("../img/playicon.png"); }
+
+.features {
+  background: #f9f9f9;
+  text-align: center;
+  position: relative;
+  height: 50rem; }
+  .features:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    content: "";
+    height: 100%;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+  .features .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3rem; }
+  .features .feature-card {
+    background: #fff;
+    padding: 3rem 4rem 4rem 4rem;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  .features h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    padding: 80px 0; }
+  .features h3 {
+    font-size: 2.4rem;
+    font-size: 700;
+    margin: 10px 0 0; }
+  .features p {
+    font-size: 1.6rem;
+    font-weight: 100; }
+  .features .car {
+    border-top: 3px solid #30e2c0; }
+  .features .shoe {
+    border-top: 3px solid #5300e6; }
+  .features .device {
+    border-top: 3px solid #27abfa; }
+
+.footer {
+  text-align: center;
+  padding: 6rem 0; }
+  .footer li {
+    list-style: none;
+    margin: 2.5rem; }
+  .footer a {
+    padding: 0 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #5300e6; }
+  .footer p {
+    font-size: 1.6rem; }
+    .footer p a {
+      margin: 0;
+      padding: 0; }
+
+.header {
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 75rem;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; }
+  .header img {
+    max-width: 50rem;
+    width: 100%;
+    padding-top: 4rem; }
+  .header .main_headline {
+    font-size: 6.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .header .main_paragraph {
+    font-size: 1.6rem; }
+  .header article {
+    width: 60%;
+    margin: 0 auto 0;
+    padding-top: 3rem; }
+    @media only screen and (max-width: 600px) {
+      .header article {
+        width: 90%; } }
+  .header .main-nav {
+    display: flex; }
+    .header .main-nav li {
+      list-style: none;
+      margin-top: 2rem;
+      padding: 0; }
+    .header .main-nav li:first-child {
+      margin-right: auto;
+      padding: 1rem 0; }
+      .header .main-nav li:first-child a {
+        padding: 0; }
+    .header .main-nav a {
+      display: block;
+      color: #fff;
+      border-radius: 4px;
+      padding: 1rem 4rem;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      transition: all 0.2s ease; }
+      .header .main-nav a:hover, .header .main-nav a:active {
+        color: #00adff; }
+  .header a.download {
+    background-color: #fff;
+    color: #00adff;
+    box-shadow: 0 1.2rem 1rem -1rem rgba(0, 0, 0, 0.2);
+    margin-left: 2.5rem;
+    transition: all 0.2s ease; }
+    .header a.download:hover, .header a.download:active, .header a.download:focus {
+      transform: scale(1.2); }
+
+.discount {
+  margin-top: 6rem; }
+  .discount h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .discount p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .discount .discountLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .discount .offer {
+    width: 40%;
+    margin: 0 auto; }
+    .discount .offer .button {
+      display: inline-block;
+      padding: 2rem 8rem;
+      background-image: linear-gradient(-100deg, #009efd 0%, #15c9cb 48%, #2af598 100%);
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.42);
+      border-radius: 4px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s ease; }
+      .discount .offer .button:hover, .discount .offer .button:active, .discount .offer .button:focus {
+        transform: scale(1.2); }

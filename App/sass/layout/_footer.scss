@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+  padding: 6rem 0;
+
+  li {
+    list-style: none;
+    margin: 2.5rem;
+  }
+
+  a {
+    padding: 0 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #5300e6;
+  }
+
+  p {
+    font-size: 1.6rem;
+
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
